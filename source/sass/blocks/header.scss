@@ -1,0 +1,10 @@
+.header {
+  padding: 12px 0;
+  backdrop-filter: blur(10px);
+  background-color: rgba(1, 1, 31, 0.4);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}

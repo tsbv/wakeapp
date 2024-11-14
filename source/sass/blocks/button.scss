@@ -1,0 +1,11 @@
+.button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+
+  &--gradient {
+    border-radius: 8px;
+    background: linear-gradient(216deg, #4870ff 0%, #fa00ff 100%);
+    box-shadow: 0 4px 16px 0 rgba(138, 97, 255, 0.6);
+  }
+}

@@ -47,6 +47,17 @@
 }
 
 .contact__bonus-link {
+  display: block;
   grid-column: 2;
   grid-row: 1 / 5;
+
+  @media (hover: hover) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

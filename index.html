@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="WakeApp - Тестовое задание.">
     <title>WakeApp - Тестовое задание.</title>
-    <script type="module" crossorigin src="/wakeapp/assets/index-DZdUCT1f.js"></script>
-    <link rel="stylesheet" crossorigin href="/wakeapp/assets/index-Bssn_gRw.css">
+    <script type="module" crossorigin src="/wakeapp/assets/index-CtuQDck5.js"></script>
+    <link rel="stylesheet" crossorigin href="/wakeapp/assets/index-DAGgXBe0.css">
   </head>
   <body class="page__body">
     <header class="header">
@@ -31,15 +31,17 @@
     <main class="page__main">
       <section class="hero">
         <h1 class="hero__title">Awesome html5 games - NO MONEY!</h1>
-        <p class="hero__text">Your Perfect Place To Get Some Fun And Excitement</p>
-        <a class="login-button button button--bordered" href="#">Log in</a>
-        <a class="play-button button button--gradient" href="#">Play</a>
+        <p class="hero__text">Your perfect place to get some fun and excitement</p>
+        <div class="hero__buttons">
+          <a class="login-button button button--bordered" href="#">Log In</a>
+          <a class="play-button button button--gradient" href="#">Play</a>
+        </div>
         <section class="registration">
           <h2 class="registration__title">Create a free account now</h2>
           <ul class="advantages reset-list">
-            <li class="advantages__item">1000+ Games available</li>
-            <li class="advantages__item">New game Every week</li>
-            <li class="advantages__item">Support our users 24/7</li>
+            <li class="advantages__item advantages__item--dice">1000+ games available</li>
+            <li class="advantages__item advantages__item--slot">New game every week</li>
+            <li class="advantages__item advantages__item--time">Support our users 24/7</li>
           </ul>
           <form class="registration__form" action="#" method="post">
             <label class="registration__label">
@@ -52,8 +54,8 @@
               <input class="registration__field field" type="email" name="user-email" placeholder="Email address" required>
             </label>
             <button class="registration__submit button button--gradient" type="submit">Join Now</button>
-            <label class="registration__label">
-              <input class="registration__field field" type="checkbox" name="privacy-policy" required>
+            <label class="registration__label registration__label--checkbox">
+              <input class="registration__field registration__checkbox field" type="checkbox" name="privacy-policy" required>
               I Accept The <a class="privacy-policy-link" href="#">Privacy Policy</a>
             </label>
           </form>

@@ -15,9 +15,11 @@
     opacity: 0.4;
   }
 
-  &:hover {
-    background-color: #f8f9fa;
-    box-shadow: 0 2px 4px rgba(5, 13, 42, 0.5);
+  @media (hover: hover) {
+    &:hover {
+      background-color: #f8f9fa;
+      box-shadow: 0 2px 4px rgba(5, 13, 42, 0.5);
+    }
   }
 
   &:focus {
@@ -36,5 +38,4 @@
       color: rgba(5, 13, 42, 0.3);
     }
   }
-
 }

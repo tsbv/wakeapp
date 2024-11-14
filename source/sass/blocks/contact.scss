@@ -1,0 +1,52 @@
+.contact {
+  padding: 24px 200px 10px;
+  background-color: #222222;
+}
+
+.contact__container {
+  display: grid;
+  grid-template-columns: 400px 475px;
+  gap: 0 148px;
+}
+
+.contact__text {
+  margin: 0 0 25px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.contact__form {
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.contact__label {
+  width: 100%;
+}
+
+.contact__field {
+  width: 100%;
+}
+
+.contact__checkbox {
+  margin-right: 8px;
+  width: 14px;
+  height: 14px;
+}
+
+.contact__submit {
+  margin-left: auto;
+  padding: 9px 38px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contact__bonus-link {
+  grid-column: 2;
+  grid-row: 1 / 5;
+}

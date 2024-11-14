@@ -2,16 +2,68 @@
   padding: 0;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   &--gradient {
     border-radius: 8px;
     background: linear-gradient(216deg, #4870ff 0%, #fa00ff 100%);
     box-shadow: 0 4px 16px 0 rgba(138, 97, 255, 0.6);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+
+    @media (hover: hover) {
+      &:hover {
+        background: linear-gradient(216deg, #3860ef 0%, #e400ef 100%);
+        box-shadow: 0 4px 20px 0 rgba(138, 97, 255, 0.8);
+      }
+    }
+
+    &:active {
+      background: linear-gradient(216deg, #2850df 0%, #d400df 100%);
+      box-shadow: 0 4px 12px 0 rgba(138, 97, 255, 0.4);
+    }
   }
 
   &--bordered {
     border: 2px solid #ffffff;
     border-radius: 8px;
     box-shadow: 0 4px 16px 0 rgba(138, 97, 255, 0.6);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+    @media (hover: hover) {
+      &:hover {
+        border-color: #fa00ff;
+        box-shadow: 0 4px 20px 0 rgba(138, 97, 255, 0.8);
+        background: linear-gradient(216deg, #f161f3 0%, #fa00ff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    &:active {
+      border-color: #fa00ff;
+      box-shadow: 0 4px 12px 0 rgba(138, 97, 255, 0.4);
+    }
+  }
+
+
+  &--small {
+    padding: 5px 13px 5px 14px;
+    font-weight: 600;
+    font-size: 10px;
+    color: #ffffff;
+    background-color: #4870ff;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: #5b7beb;
+      }
+    }
+  
+    &:active {
+      background-color: #4870ff;
+    }
   }
 }

@@ -16,6 +16,23 @@
   font-weight: 700;
   font-size: 16px;
   color: #ffffff;
+  transition: color 0.3s ease, background 0.3s ease, -webkit-text-fill-color 0.3s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      background: linear-gradient(216deg, #4870ff 0%, #fa00ff 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &:active {
+    background: linear-gradient(216deg, #3860ef 0%, #e400ef 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
   &--active {
     background: linear-gradient(216deg, #4870ff 0%, #fa00ff 100%);
@@ -39,7 +56,8 @@
 }
 
 .nav__buttons {
+  margin-left: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-left: auto;
+  gap: 4px;
 }

@@ -1,7 +1,20 @@
 .privacy-policy-link {
+  margin-left: 4px;
+  display: block;
   color: #ffffff;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   text-decoration-thickness: from-font;
   text-underline-offset: 2px;
+  transition: text-decoration-color 0.3s ease;
+
+  @media (hover: hover) {
+    &:hover {
+      text-decoration-color: #9340ff;
+    }
+  }
+
+  &:active {
+    text-decoration-color: #7220df;
+  }
 }

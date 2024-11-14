@@ -14,4 +14,27 @@
     color: #050d2a;
     opacity: 0.4;
   }
+
+  &:hover {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(5, 13, 42, 0.5);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.5);
+  }
+
+  &:disabled {
+    background-color: #f1f3f5;
+    color: rgba(5, 13, 42, 0.6);
+    cursor: not-allowed;
+    
+    &::placeholder {
+      color: rgba(5, 13, 42, 0.3);
+    }
+  }
+
 }

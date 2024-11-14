@@ -8,4 +8,10 @@
     background: linear-gradient(216deg, #4870ff 0%, #fa00ff 100%);
     box-shadow: 0 4px 16px 0 rgba(138, 97, 255, 0.6);
   }
+
+  &--bordered {
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px 0 rgba(138, 97, 255, 0.6);
+  }
 }

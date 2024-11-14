@@ -1,0 +1,17 @@
+.field {
+  padding: 13px 14px 12px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-family: $font-family;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #050d2a;
+
+  &::placeholder {
+    font-family: $font-family;
+    text-transform: capitalize;
+    color: #050d2a;
+    opacity: 0.4;
+  }
+}

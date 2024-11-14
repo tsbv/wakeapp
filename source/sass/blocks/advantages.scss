@@ -1,0 +1,30 @@
+.advantages {
+  max-width: 378px;
+  display: grid;
+  grid-template-columns: 116px 105px 108px;
+  gap: 24px;
+  grid-column: 3 / -1;
+}
+
+.advantages__item {
+  padding-left: 42px;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-size: 36px 36px;
+  background-position: left;
+  background-repeat: no-repeat;
+
+  &--dice {
+    background-image: url("../../icons/dice.svg");
+  }
+
+  &--slot {
+    background-image: url("../../icons/slot.svg");
+  }
+
+  &--time {
+    background-image: url("../../icons/time.svg");
+  }
+}

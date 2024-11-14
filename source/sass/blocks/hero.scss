@@ -1,0 +1,35 @@
+.hero {
+  padding: 54px;
+  background-color: darkblue;
+  display: grid;
+}
+
+.hero__title {
+  margin: 0 auto 6px;
+  max-width: 586px;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58.46px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero__text {
+  margin: 0 auto 24px;
+  max-width: 389px;
+  font-size: 28px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #ffffff;
+  line-height: 34.1px;
+}
+
+.hero__buttons {
+  margin: 0 0 59px;
+  display: grid;
+  grid-template-columns: repeat(2, 160px);
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}

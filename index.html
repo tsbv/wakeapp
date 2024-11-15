@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="WakeApp - Тестовое задание.">
     <title>WakeApp - Тестовое задание.</title>
-    <script type="module" crossorigin src="/wakeapp/assets/index-uQHyRiBV.js"></script>
-    <link rel="stylesheet" crossorigin href="/wakeapp/assets/index-DMlFMM0h.css">
+    <script type="module" crossorigin src="/wakeapp/assets/index-BIAnXAZn.js"></script>
+    <link rel="stylesheet" crossorigin href="/wakeapp/assets/index-BZdLbTPw.css">
   </head>
   <body class="page__body">
     <header class="header">
@@ -46,19 +46,19 @@
             <li class="advantages__item advantages__item--slot">New game every week</li>
             <li class="advantages__item advantages__item--time">Support our users 24/7</li>
           </ul>
-          <form class="registration__form" action="#" method="post">
-            <label class="registration__label">
-              <input class="registration__field field" type="text" name="user-first-name" placeholder="Firstname" required>
+          <form class="registration-form" action="#" method="post">
+            <label class="registration-form__label">
+              <input class="registration-form__field field" type="text" name="user-first-name" placeholder="Firstname" required>
             </label>
-            <label class="registration__label">
-              <input class="registration__field field" type="text" name="user-last-name" placeholder="Lastname" required>
+            <label class="registration-form__label">
+              <input class="registration-form__field field" type="text" name="user-last-name" placeholder="Lastname" required>
             </label>
-            <label class="registration__label">
-              <input class="registration__field field" type="email" name="user-email" placeholder="Email address" required>
+            <label class="registration-form__label">
+              <input class="registration-form__field field" type="email" name="user-email" placeholder="Email address" required>
             </label>
-            <button class="registration__submit button button--gradient" type="submit">Join Now</button>
+            <button class="registration-form__submit button button--gradient" type="submit">Join Now</button>
             <label class="checkbox">
-              <input class="registration__field registration__checkbox field" type="checkbox" name="privacy-policy" required>
+              <input class="registration-form__field registration-form__checkbox field" type="checkbox" name="privacy-policy" required>
               I Accept The <a class="privacy-policy-link" href="#">Privacy Policy</a>
             </label>
           </form>
@@ -190,5 +190,27 @@
         </ul>
       </div>
     </footer>
+    <div class="modal">
+      <div class="modal__form">
+        <button class="button modal__close-button" type="button" aria-label="Close modal window."></button>
+        <h2 class="modal__title">Sign up</h2>
+        <form class="registration-form" action="#" method="post">
+          <label class="registration-form__label">
+            <input class="registration-form__field field" type="text" name="user-first-name" placeholder="Firstname" required>
+          </label>
+          <label class="registration-form__label">
+            <input class="registration-form__field field" type="text" name="user-last-name" placeholder="Lastname" required>
+          </label>
+          <label class="registration-form__label">
+            <input class="registration-form__field field" type="email" name="user-email" placeholder="Email address" required>
+          </label>
+          <button class="registration-form__submit button button--gradient" type="submit">Join Now</button>
+          <label class="checkbox">
+            <input class="registration-form__field registration-form__checkbox field" type="checkbox" name="privacy-policy" required>
+            I Accept The <a class="privacy-policy-link" href="#">Privacy Policy</a>
+          </label>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

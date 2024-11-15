@@ -3,6 +3,71 @@
   display: flex;
 }
 
+.nav__toggle {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    left: 0;
+    background-color: #ffffff;
+    transition: all 0.3s ease 0s;
+  }
+
+  &::before {
+    top: 10px;
+  }
+
+  &::after {
+    bottom: 10px;
+  }
+}
+
+.nav__toggle-line {
+  display: block;
+  width: 39px;
+  height: 3px;
+  background-color: #ffffff;
+  transform: scale(1);
+  border-radius: 2px;
+}
+
+.nav--opened .nav__toggle {
+  &::before {
+    top: 50%;
+    background-color: #ffffff;
+    transform: rotate(-45deg) translate(0, -50%);
+  }
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
+
+  &::after {
+    bottom: 48%;
+    background-color: #ffffff;
+    transform: rotate(45deg) translate(0, 50%);
+  
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+}
+
+.nav--opened .nav__toggle-line {
+  transform: scale(0);
+}
+
 .nav__menu {
   max-width: 618px;
   display: flex;
@@ -65,4 +130,72 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 4px;
+}
+
+/* Tablet */
+@media (max-width: 1439px) {
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__menu {
+    gap: 30px;
+  }
+
+  .nav__link {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .nav {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+
+  .nav--opened .nav__menu {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 80px 37px 37px 37px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #222222;
+    z-index: 1;
+  }
+
+  .nav--opened .nav__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav--opened .nav__link {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .nav--closed .nav__menu {
+    display: none;
+  }
+
+  .nav__link {
+    padding: 10px 0;
+  }
+
+  .nav__buttons {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    order: -1;
+    z-index: 2;
+  }
 }

@@ -20,3 +20,11 @@
     box-shadow: 0 4px 12px 0 rgba(147, 64, 255, 0.2);
   }
 }
+
+/* Tablet */
+@media (max-width: 1439px) {
+  .sign-up-button {
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+}

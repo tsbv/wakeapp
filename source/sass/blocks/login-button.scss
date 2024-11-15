@@ -5,3 +5,11 @@
   text-align: center;
   color: #ffffff;
 }
+
+/* Tablet */
+@media (max-width: 1439px) {
+  .login-button {
+    padding: 9px 12px;
+    font-size: 14px;
+  }
+}

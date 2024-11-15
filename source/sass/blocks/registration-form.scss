@@ -5,9 +5,15 @@
 }
 
 .registration-form--modal {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+
+  .registration-form__label {
+    &:nth-child(-n + 3) {
+      grid-column: 1 / -1;
+    }
+  }
 }
 
 .registration-form__submit {

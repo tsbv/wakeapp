@@ -25,6 +25,12 @@
 @media (max-width: 1439px) {
   .sign-up-button {
     padding: 9px 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .sign-up-button {
     font-size: 14px;
   }
 }

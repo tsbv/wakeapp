@@ -76,3 +76,46 @@
   width: 14px;
   height: 14px;
 }
+
+/* Tablet */
+@media (max-width: 1439px) {
+  .registration {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .registration__title {
+    grid-column: 1 / -1;
+  }
+
+  .registration__form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1 / -1;
+    gap: 20px 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .registration {
+    width: 100%;
+    max-width: 500px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .registration__title {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .registration__label {
+    grid-column: 1 / -1;
+  }
+
+  .registration__submit {
+    grid-column: 1 / -1;
+    margin-top: 16px;
+  }
+}
+

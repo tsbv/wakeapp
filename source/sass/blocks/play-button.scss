@@ -6,3 +6,10 @@
   text-align: center;
   color: #ffffff;
 }
+
+/* Mobile */
+@media (max-width: 767px) {
+  .play-button {
+    font-size: 14px;
+  }
+}

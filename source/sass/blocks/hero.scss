@@ -27,9 +27,43 @@
 
 .hero__buttons {
   margin: 0 0 59px;
+  padding: 0 70px;
   display: grid;
   grid-template-columns: repeat(2, 160px);
   align-items: center;
   justify-content: center;
   gap: 16px;
+}
+
+/* Tablet */
+@media (max-width: 1439px) {
+  .hero {
+    padding: 54px 40px 26px;
+  }
+
+  .hero__title {
+    max-width: 480px;
+    font-size: 36px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hero {
+    padding: 54px 16px 26px;
+  }
+
+  .hero__title {
+    max-width: 320px;
+    font-size: 28px;
+  }
+
+  .hero__text {
+    max-width: 260px;
+  }
+
+  .hero__buttons {
+    grid-template-columns: repeat(1, 100%);
+    gap: 8px;
+  }
 }

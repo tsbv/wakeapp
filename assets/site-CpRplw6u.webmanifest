@@ -1,0 +1,20 @@
+{
+  "name": "Social WNS New",
+  "short_name": "WakeApp",
+  "description": "Best games for free",
+  "icons": [
+    {
+      "src": "favicons/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicons/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}

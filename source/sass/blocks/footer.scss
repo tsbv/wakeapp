@@ -59,3 +59,21 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   grid-column: 1 / -1;
 }
+
+/* Tablet */
+@media (max-width: 1439px) {
+  .footer {
+    padding: 24px 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .footer {
+    padding: 24px 16px;
+  }
+
+  .footer__link {
+    font-size: 12px;
+  }
+}

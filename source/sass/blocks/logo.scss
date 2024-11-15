@@ -2,6 +2,7 @@
   margin-right: 64px;
   padding: 12px 0;
   display: block;
+  z-index: 2;
   transition: opacity 0.3s ease;
 
   @media (hover: hover) {

@@ -198,8 +198,10 @@
     </footer>
     <div class="modal">
       <div class="modal__form">
-        <button class="button modal__close-button" type="button" aria-label="Close modal window."></button>
-        <h2 class="modal__title">Create a free account now</h2>
+        <div class="modal__tabs">
+          <button class="modal__sign-up button" type="button">Sign Up</button>
+          <button class="modal__login button" type="button">Login</button>
+        </div>
         <form class="registration-form registration-form--modal" action="#" method="post">
           <label class="registration-form__label">
             <input class="registration-form__field field" type="text" name="user-first-name" placeholder="Firstname" required>
@@ -208,13 +210,19 @@
             <input class="registration-form__field field" type="text" name="user-last-name" placeholder="Lastname" required>
           </label>
           <label class="registration-form__label">
-            <input class="registration-form__field field" type="email" name="user-email" placeholder="Email address" required>
+            <input class="registration-form__field field" type="email" name="user-email" placeholder="Email" autocomplete="username" required>
           </label>
-          <button class="registration-form__submit button button--gradient" type="submit">Join Now</button>
-          <label class="checkbox">
+          <label class="registration-form__label">
+            <input class="registration-form__field field" type="password" name="user-password" placeholder="Password" minlength="8" autocomplete="new-password" required>
+          </label>
+          <label class="registration-form__label">
+            <input class="registration-form__field field" type="password" name="user-password-confirm" placeholder="Confirm Password" autocomplete="new-password" required>
+          </label>
+          <label class="checkbox modal__checkbox">
             <input class="registration-form__field registration-form__checkbox field" type="checkbox" name="privacy-policy" required>
             I Accept The <a class="privacy-policy-link" href="#">Privacy Policy</a>
           </label>
+          <button class="registration-form__submit modal__submit button button--gradient" type="submit">Join Now</button>
         </form>
       </div>
     </div>

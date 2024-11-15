@@ -105,3 +105,75 @@
   color: #ffffff;
   grid-column: 1 / -1;
 }
+
+/* Tablet */
+@media (max-width: 1439px) {
+  .games {
+    padding: 26px 40px 24px;
+  }
+
+  .games__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .games__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .games__text {
+    grid-column: 1 / -1;
+  }
+
+  .games__view-all {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+}
+
+/* Mobile */
+@media (max-width: 549px) {
+  .games__list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 15px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 766px) {
+  .games__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .games {
+    padding: 20px 16px;
+  }
+
+  .games__container {
+    padding: 0;
+    gap: 16px;
+  }
+
+  .games__title {
+    margin: 0 0 16px;
+  }
+
+  .games__image {
+    max-width: 135px;
+  }
+
+  .games__text {
+    font-size: 14px;
+  }
+
+  .games__name {
+    font-size: 14px;
+  }
+
+  .games__notice {
+    font-size: 12px;
+    text-align: center;
+  }
+}

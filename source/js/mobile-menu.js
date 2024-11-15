@@ -1,4 +1,4 @@
-const initMobileNav = () => {
+const handleMobileNav = () => {
   const navNode = document.querySelector('.nav');
   const navToggleNode = document.querySelector('.nav__toggle');
   navToggleNode.addEventListener('click', () => {
@@ -7,4 +7,4 @@ const initMobileNav = () => {
   });
 };
 
-export { initMobileNav };
+export { handleMobileNav };

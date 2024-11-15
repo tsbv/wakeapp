@@ -1,6 +1,18 @@
 .hero {
   padding: 54px 0 26px;
   display: grid;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -125px;
+    left: 0;
+    width: 100%;
+    height: 333px;
+    background: linear-gradient(180deg, rgba(2, 12, 45, 0) 0%, #020c2d 100%);
+    z-index: -1;
+  }
 }
 
 .hero__title {

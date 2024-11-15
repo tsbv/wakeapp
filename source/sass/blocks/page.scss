@@ -15,4 +15,8 @@
 
 .page__main {
   flex-grow: 1;
+  background-image: url("/images/bg-hero.png");
+  background-repeat: no-repeat;
+  background-position: center -70px;
+  z-index: 1;
 }

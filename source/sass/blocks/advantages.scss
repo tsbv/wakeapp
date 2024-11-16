@@ -2,8 +2,10 @@
   max-width: 378px;
   display: grid;
   grid-template-columns: 116px 105px 108px;
+  justify-self: end;
   gap: 24px;
   grid-column: 3 / -1;
+  transform: translateY(-6px);
 }
 
 .advantages__item {

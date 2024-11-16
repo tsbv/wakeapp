@@ -24,6 +24,10 @@
   gap: 0 148px;
 }
 
+.contact__title {
+  margin: 23px 0 2px;
+}
+
 .contact__text {
   margin: 0 0 25px;
   font-size: 16px;
@@ -46,19 +50,20 @@
 }
 
 .contact__checkbox {
-  margin-right: 8px;
+  margin: 0 8px 0 0;
   width: 14px;
   height: 14px;
 }
 
 .contact__submit {
   margin-left: auto;
-  padding: 9px 38px;
+  padding: 9px 43px;
   font-weight: 700;
   font-size: 16px;
   text-transform: capitalize;
   text-align: center;
   color: #ffffff;
+  transform: translateY(-10px);
 }
 
 .contact__bonus-link {

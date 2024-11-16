@@ -13,6 +13,11 @@ const initModalHandler = () => {
       toggleModal(false);
     }
   };
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      toggleModal(false);
+    }
+  });
   window.addEventListener('click', handleOutsideClick);
   window.addEventListener('touchend', handleOutsideClick);
 };

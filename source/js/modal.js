@@ -8,16 +8,13 @@ const initModalHandler = () => {
     event.preventDefault();
     toggleModal(true);
   });
-  window.addEventListener('click', (event) => {
+  const handleOutsideClick = (event) => {
     if (event.target === modalNode) {
       toggleModal(false);
     }
-  });
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
-      toggleModal(false);
-    }
-  });
+  };
+  window.addEventListener('click', handleOutsideClick);
+  window.addEventListener('touchend', handleOutsideClick);
 };
 
 export { initModalHandler };

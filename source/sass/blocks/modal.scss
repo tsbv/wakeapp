@@ -33,7 +33,7 @@
   line-height: 36px;
   font-weight: 400;
   text-align: center;
-  color: #ffffff;
+  color: $white;
 }
 
 .modal__close-button {
@@ -100,7 +100,7 @@
   width: 50%;
   font-weight: 700;
   font-size: 20px;
-  color: #ffffff;
+  color: $white;
 
   @media (hover: hover) {
     &:hover {
@@ -117,7 +117,7 @@
   width: 50%;
   font-weight: 700;
   font-size: 20px;
-  color: #ffffff;
+  color: $white;
   background: #050d2a;
   opacity: 0.4;
   border-radius: 0 16px 0 0;

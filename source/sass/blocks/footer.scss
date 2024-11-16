@@ -21,7 +21,7 @@
 .footer__link {
   font-weight: 700;
   font-size: 18px;
-  color: #ffffff;
+  color: $white;
   position: relative;
 
   @media (hover: hover) {
@@ -42,7 +42,7 @@
       position: absolute;
       top: 0;
       right: -12px;
-      color: #ffffff;
+      color: $white;
       pointer-events: none;
     }
   }
@@ -56,7 +56,7 @@
   font-weight: 400;
   font-size: 14px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   grid-column: 1 / -1;
 }

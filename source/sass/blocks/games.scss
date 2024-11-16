@@ -16,7 +16,7 @@
 .games__text {
   margin: 0;
   font-size: 16px;
-  color: #ffffff;
+  color: $white;
   grid-column: 1;
 }
 
@@ -27,7 +27,7 @@
   text-decoration-skip-ink: none;
   text-decoration-thickness: from-font;
   text-underline-offset: 2px;
-  color: #ffffff;
+  color: $white;
   justify-self: end;
   transition: opacity 0.3s ease;
 
@@ -73,17 +73,17 @@
 .games__name {
   font-weight: 700;
   font-size: 16px;
-  color: #ffffff;
+  color: $white;
   transition: opacity 0.3s ease, color 0.3s ease;
 
   @media (hover: hover) {
     &:hover {
-      color: #4870ff;
+      color: $hover;
     }
   }
 
   &:active {
-    color: #4870ff;
+    color: $hover;
     opacity: 0.8;
   }
 }
@@ -92,7 +92,7 @@
   display: block;
   font-weight: 300;
   font-size: 12px;
-  color: #ffffff;
+  color: $white;
   opacity: 0.5;
 }
 
@@ -101,7 +101,7 @@
   max-width: 655px;
   font-weight: 400;
   font-size: 14px;
-  color: #ffffff;
+  color: $white;
   grid-column: 1 / -1;
 }
 

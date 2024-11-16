@@ -20,7 +20,7 @@
     width: 40px;
     height: 3px;
     left: 0;
-    background-color: #ffffff;
+    background-color: $white;
     transition: all 0.3s ease 0s;
   }
 
@@ -37,7 +37,7 @@
   display: block;
   width: 39px;
   height: 3px;
-  background-color: #ffffff;
+  background-color: $white;
   transform: scale(1);
   border-radius: 2px;
 }
@@ -45,7 +45,7 @@
 .nav--opened .nav__toggle {
   &::before {
     top: 50%;
-    background-color: #ffffff;
+    background-color: $white;
     transform: rotate(-45deg) translate(0, -50%);
   }
 
@@ -55,7 +55,7 @@
 
   &::after {
     bottom: 48%;
-    background-color: #ffffff;
+    background-color: $white;
     transform: rotate(45deg) translate(0, 50%);
   
     @media (min-width: 1440px) {
@@ -82,12 +82,12 @@
   max-width: 95px;
   font-weight: 700;
   font-size: 16px;
-  color: #ffffff;
+  color: $white;
   transition: color 0.3s ease, background 0.3s ease, -webkit-text-fill-color 0.3s ease;
 
   @media (hover: hover) {
     &:hover {
-      background: linear-gradient(216deg, #4870ff 0%, #fa00ff 100%);
+      background: linear-gradient(216deg, $hover 0%, $gradient 100%);
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -102,7 +102,7 @@
   }
 
   &--active {
-    background: linear-gradient(216deg, #4870ff 0%, #fa00ff 100%);
+    background: linear-gradient(216deg, $hover 0%, $gradient 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -115,7 +115,7 @@
       height: 4px;
       bottom: 0;
       left: 0;
-      background: linear-gradient(216deg, #4870ff 0%, #fa00ff 100%);
+      background: linear-gradient(216deg, $hover 0%, $gradient 100%);
       box-shadow: 0 4px 16px 0 rgba(138, 97, 255, 0.6);
       border-radius: 4px 4px 0 0;
     }

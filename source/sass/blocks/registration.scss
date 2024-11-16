@@ -17,14 +17,14 @@
   font-size: 22px;
   line-height: 26.8px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $white;
   grid-column: 1 / 3;
 }
 
 .checkbox {
   font-size: 14px;
   text-transform: capitalize;
-  color: #ffffff;
+  color: $white;
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;

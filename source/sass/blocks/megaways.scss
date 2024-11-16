@@ -77,18 +77,18 @@
   max-width: 175px;
   font-weight: 700;
   font-size: 16px;
-  color: #ffffff;
+  color: $white;
   pointer-events: auto;
   transition: opacity 0.3s ease, color 0.3s ease;
 
   @media (hover: hover) {
     &:hover {
-      color: #4870ff;
+      color: $hover;
     }
   }
 
   &:active {
-    color: #4870ff;
+    color: $hover;
     opacity: 0.8;
   }
 }
@@ -98,7 +98,7 @@
   max-width: 162px;
   font-weight: 400;
   font-size: 10px;
-  color: #ffffff;
+  color: $white;
   pointer-events: auto;
 }
 

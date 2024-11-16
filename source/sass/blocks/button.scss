@@ -6,7 +6,7 @@
 
   &--gradient {
     border-radius: 8px;
-    background: linear-gradient(216deg, #4870ff 0%, #fa00ff 100%);
+    background: linear-gradient(216deg, $hover 0%, $gradient 100%);
     box-shadow: 0 4px 16px 0 rgba(138, 97, 255, 0.6);
     transition: background 0.3s ease, box-shadow 0.3s ease;
 
@@ -24,16 +24,16 @@
   }
 
   &--bordered {
-    border: 2px solid #ffffff;
+    border: 2px solid $white;
     border-radius: 8px;
     box-shadow: 0 4px 16px 0 rgba(138, 97, 255, 0.6);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
     @media (hover: hover) {
       &:hover {
-        border-color: #fa00ff;
+        border-color: $gradient;
         box-shadow: 0 4px 20px 0 rgba(138, 97, 255, 0.8);
-        background: linear-gradient(216deg, #f161f3 0%, #fa00ff 100%);
+        background: linear-gradient(216deg, #f161f3 0%, $gradient 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -41,7 +41,7 @@
     }
 
     &:active {
-      border-color: #fa00ff;
+      border-color: $gradient;
       box-shadow: 0 4px 12px 0 rgba(138, 97, 255, 0.4);
     }
   }
@@ -51,8 +51,8 @@
     padding: 5px 13px 5px 14px;
     font-weight: 600;
     font-size: 10px;
-    color: #ffffff;
-    background-color: #4870ff;
+    color: $white;
+    background-color: $hover;
     border-radius: 12px;
     transition: background-color 0.3s ease;
 
@@ -63,7 +63,7 @@
     }
   
     &:active {
-      background-color: #4870ff;
+      background-color: $hover;
     }
   }
 }

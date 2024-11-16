@@ -28,17 +28,17 @@
 .our-deals__title {
   font-weight: 700;
   font-size: 16px;
-  color: #ffffff;
+  color: $white;
   transition: opacity 0.3s ease, color 0.3s ease;
   
   @media (hover: hover) {
     &:hover {
-      color: #4870ff;
+      color: $hover;
     }
   }
 
   &:active {
-    color: #4870ff;
+    color: $hover;
     opacity: 0.8;
   }
 }
@@ -55,7 +55,7 @@
   font-family: $font-family;
   font-weight: 300;
   font-size: 12px;
-  color: #ffffff;
+  color: $white;
   opacity: 0.5;
 }
 

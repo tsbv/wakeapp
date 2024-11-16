@@ -1,6 +1,6 @@
 .field {
   padding: 13px 14px 12px;
-  background-color: #ffffff;
+  background-color: $white;
   border: none;
   border-radius: 8px;
   font-family: $font-family;
@@ -24,7 +24,7 @@
   &:focus {
     outline: none;
     border-color: #4a90e2;
-    background-color: #ffffff;
+    background-color: $white;
     box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.5);
   }
 
